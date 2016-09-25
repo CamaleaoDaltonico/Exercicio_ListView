@@ -26,7 +26,7 @@ public class Watcher implements TextWatcher {
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
-        String s1 = String.valueOf(s);
+        String sa = "+"+s+"+";
         ArrayList<String> vazio = new ArrayList<String>();
         if (mainActivity.display.size()>0) {
             mainActivity.display=vazio;
@@ -34,7 +34,7 @@ public class Watcher implements TextWatcher {
 
         for(int i=0; i < mainActivity.pesquisa.size(); i++){
 
-            if(mainActivity.pesquisa.subList(i,i+1).get(0).toString().matches(s.toString())){
+            if(mainActivity.pesquisa.subList(i,i+1).get(0).toString().matches(sa){
                 mainActivity.display.add(mainActivity.pesquisa.subList(i,i+1).get(0).toString());
             }
 
