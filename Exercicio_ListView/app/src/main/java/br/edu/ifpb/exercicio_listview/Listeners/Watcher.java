@@ -26,7 +26,7 @@ public class Watcher implements TextWatcher {
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
-        String sa = "+"+s+"+";
+        String sa = ".*"+s+".*";
         ArrayList<String> vazio = new ArrayList<String>();
         if (mainActivity.display.size()>0) {
             mainActivity.display=vazio;
